@@ -1,16 +1,13 @@
 package com.example.goodluck.backup;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +32,8 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
         components[2]="---TEACHERS---";
         //creating for loop
         for(String component:components){
-          listAdapter.add(component);
+            // Adapter
+            listAdapter.add(component);
         }
        ListAdapter adapter= new ArrayAdapter<>(this,
                android.R.layout.simple_list_item_1,listAdapter);
